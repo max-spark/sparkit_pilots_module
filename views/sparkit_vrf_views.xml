@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+      <record id="pilots_visit_report_form_view" model="ir.ui.view">
+          <field name="name">sparkit.pilots.vrf.form</field>
+          <field name="model">sparkit.vrf</field>
+          <field name="inherit_id" ref="sparkit.visit_report_form_view"/>
+          <field name="arch" type="xml">
+              <xpath expr="//page[@name='advocacy']" position="after">
+                <page string="Pilot Updates"
+  									attrs="{'invisible': [('name', '=', False)]}">
+  								<field name="pilot_update_ids"
+  									context="{'default_community_id': community_id, 'default_date': visit_date}"
+  									domain="[('community_id', '=', community_id)]"/>
+  							</page>
+              </xpath>
+          </field>
+      </record>
+
+    </data>
+</openerp>

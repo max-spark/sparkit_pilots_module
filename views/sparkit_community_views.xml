@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+      <record id="pilots_community_form_view" model="ir.ui.view">
+          <field name="name">sparkit.pilots.community.form</field>
+          <field name="model">sparkit.community</field>
+          <field name="inherit_id" ref="sparkit.community_form_view"/>
+          <field name="arch" type="xml">
+              <xpath expr="//page[@name='advocacy']" position="after">
+                <page string="Pilots"
+                    attrs="{'invisible': [('phase', '=', 'community_identification')]}">
+                  <field name="pilot_ids"/>
+                </page>
+              </xpath>
+          </field>
+      </record>
+
+    </data>
+</openerp>

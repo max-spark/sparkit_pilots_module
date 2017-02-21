@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_sparkit_pilot,sparkit.pilot,model_sparkit_pilot,,1,1,1,1
+access_sparkit_pilotactivities,sparkit.pilotactivities,model_sparkit_pilotactivities,,1,1,1,1
+access_sparkit_pilotsharing,sparkit.pilotsharing,model_sparkit_pilotsharing,,1,1,1,1
+access_sparkit_pilotrisks,sparkit.pilotrisks,model_sparkit_pilotrisks,,1,1,1,1
+access_sparkit_pilotupdate,sparkit.pilotupdate,model_sparkit_pilotupdate,,1,1,1,1
